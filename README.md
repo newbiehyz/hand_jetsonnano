@@ -90,4 +90,5 @@ pip3 install pycuda --user
 git clone https://github.com/newbiehyz/hand_jetsonnano
 cd hand_jetsonnano
 python3 detect.py
+# press q to exit
 ```
