@@ -79,3 +79,10 @@ install pillow correctly
 pip3 uninstall pillow
 pip3 install pillow --no-cache-dir
 ```
+5. install pycuda library
+```
+export PATH=/usr/local/cuda-10.2/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
+pip3 install pycuda --user
+```
+## Inference
