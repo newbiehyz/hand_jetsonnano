@@ -86,3 +86,9 @@ export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:$LD_LIBRARY_PATH
 pip3 install pycuda --user
 ```
 ## Inference
+```
+git clone https://github.com/newbiehyz/hand_jetsonnano
+```
+```
+python3 detect.py
+```
