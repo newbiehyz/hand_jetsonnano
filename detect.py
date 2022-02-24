@@ -130,7 +130,6 @@ class YoLov5TRT(object):
         self.cuda_outputs = cuda_outputs
         self.bindings = bindings
 
-    # 释放引擎，释放GPU显存，释放CUDA流
     def __del__(self):
         print("delete object to release memory")
 
@@ -373,12 +372,12 @@ def detect_camera(camera, yolov5_wrapper):
 
 
 def main_camera():
-    camera = cv2.VideoCapture(0)  # usb摄像头用这个，也可以用jetcam中的usb接口
+    camera = cv2.VideoCapture(0)  
     # camera = CSICamera(capture_device=0, width=224, height=224)
     # load custom plugins
-    PLUGIN_LIBRARY = "/home/jetson/Desktop/workspace/tensorrtx/yolov5/build/libmyplugins.so"
+    PLUGIN_LIBRARY = "./tensorrtx/yolov5/build/libmyplugins.so"
     ctypes.CDLL(PLUGIN_LIBRARY)
-    engine_file_path = "/home/jetson/Desktop/workspace/tensorrtx/yolov5/build/ifw.engine"
+    engine_file_path = "./tensorrtx/yolov5/build/ifw.engine"
 
     # YoLov5TRT instance
     yolov5_wrapper = YoLov5TRT(engine_file_path)
@@ -389,7 +388,7 @@ def main_camera():
     GPIO.setup(21,GPIO.OUT)
 
     detect_camera(camera, yolov5_wrapper)
-    # camera.release()  使用cv方法打开摄像头才需要这句
+    camera.release() 
     cv2.destroyAllWindows()
     print("\nfinish!")
 
