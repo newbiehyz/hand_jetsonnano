@@ -4,14 +4,22 @@ Object detection applications to prevent finger injuries in a cutting tool holde
 
 research project while in University of Stuttgart
 
-## Tabels of Contents
 
 
 
+## Features:
+
+***Customized detection area***
+
+***LED lights up when a finger is detected***
+
+***Detection speed of about 40fps***
 
 ## Background
 
-
+Inspired by the following video. (Youtube)
+The idea is in protecting the safety of the chainsaw operator. When the saw is working, customize the danger zone. If a finger is found in the dangerzone, a signal is output to alert the operator.
+[SawStop | SawStop Hot Dog Demo](https://www.youtube.com/watch?v=fq3o0VGUh50)
 
 
 
