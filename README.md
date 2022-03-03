@@ -4,7 +4,7 @@ Object detection applications to prevent finger injuries in a cutting tool holde
 
 research project while in University of Stuttgart
 
-
+![avatar](https://github.com/newbiehyz/hand_jetsonnano/blob/main/nvidia_reply.jpg?raw=true)
 
 
 ## Features:
